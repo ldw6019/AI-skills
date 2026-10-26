@@ -13,3 +13,9 @@
 3. 디자인 경로: `scaffold.py STUDY.md --accent "#2b44b8"` → TODO 다듬기 → `render.py <html> --source STUDY.md --fix-toc`.
 
 쪽수 목표는 없습니다. 강의 자료가 길면 공부 자료도 길어지고, 대신 빈 쪽 없이 이어서 흐르게 조판합니다.
+
+## 읽기 쉬움이 먼저
+모든 글자는 바로 뒤 바탕과 4.5:1 이상 대비가 나야 합니다(큰 글자 3:1). `scaffold.py`는 너무 밝은 강조색을 스스로 어둡게 바꾸고, `render.py`는 PDF의 모든 글자를 실제 바탕과 재서 `대비 부족:`으로 알려 줍니다. Markdown 경로의 PDF도 `render.py --pdf <파일>`로 점검합니다.
+
+## 실전 예제
+`course-study-builder/tests/e2e/`에 강의 PDF, 실습 코드, 진행 중인 과제, 이전 질문으로 이루어진 입력과 기준 결과(`expected/STUDY.md`)가 있습니다. 두 스킬만으로 처음부터 끝까지 돌려 보는 회귀 테스트로 씁니다.
